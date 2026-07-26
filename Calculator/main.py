@@ -27,7 +27,7 @@ elif operator == "//":
 else:
     print("Choose a Valid Operator")
 finish = input("Do you want to quit? (Yes/No) ")
-while finish == "No":
+while finish.lower() == "no":
     operator = input("Choose an operator (+ - / * % //): ")
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
@@ -55,6 +55,6 @@ while finish == "No":
     else:
         print("Choose a Valid Operator")
     again = input("Do you want to quit? (Yes/No) ")
-    if again == "Yes":
+    if again.lower() == "yes":
         break
 print("Goodbye")
